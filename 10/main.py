@@ -1,17 +1,9 @@
-import json
+from methods import load_file, save_file
 
-# r - read
-with open("data/data.json", 'r') as file:
-    data = json.load(file)
-    data.append({
-        "name": "Petar Petrovic",
-        "age": 35,
-        "height": 190,
-        "gender": "male"
-    })
+data = load_file("data/user.json")
 
-print(data)
+data.append({
+    "name": "Test Test"
+})
 
-# w - write
-with open("data/data.json", 'w') as file:
-    json.dump(data, file, indent=4) # dupm - upisivanje u json fajl, ident=4 - formatiranje data.json fajla
+save_file("data/user.json", data)
