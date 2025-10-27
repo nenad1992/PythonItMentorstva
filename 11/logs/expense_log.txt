@@ -1,4 +1,0 @@
-Amount: 5000, User: 1, Budget: 96000, Preostali budzet: 91000Amount: 2000, User: 1, Budget: 96000, Preostali budzet: 94000
-Amount: 2000, User: 1, Budget: 96000, Preostali budzet: 94000
-Amount: 500, User: 1, Budget: 96000, Preostali budzet: 95500, Datetime: 2025-10-24
-Amount: 5000, User: 1, Budget: 96000, Preostali budzet: 91000, Datetime: 2025-10-24 22:51:16.672271
