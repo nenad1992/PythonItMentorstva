@@ -1,0 +1,57 @@
+[
+  {
+    "name": "iPhone 14",
+    "price": 1200,
+    "amount": 15
+  },
+  {
+    "name": "Samsung Galaxy S22",
+    "price": 1000,
+    "amount": 20
+  },
+  {
+    "name": "Google Pixel 7",
+    "price": 900,
+    "amount": 10
+  },
+  {
+    "name": "OnePlus 10",
+    "price": 800,
+    "amount": 0
+  },
+  {
+    "name": "Sony Xperia 5",
+    "price": 950,
+    "amount": 8
+  },
+  {
+    "name": "Xiaomi Mi 12",
+    "price": 700,
+    "amount": 25
+  },
+  {
+    "name": "Oppo Find X5",
+    "price": 850,
+    "amount": 0
+  },
+  {
+    "name": "Huawei P50",
+    "price": 1100,
+    "amount": 9
+  },
+  {
+    "name": "Nokia G50",
+    "price": 650,
+    "amount": 30
+  },
+  {
+    "name": "Asus ROG Phone 6",
+    "price": 1200,
+    "amount": 7
+  },
+  {
+    "name": "Motorola Edge 30",
+    "price": 750,
+    "amount": 22
+  }
+]
