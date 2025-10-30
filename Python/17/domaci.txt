@@ -1,0 +1,53 @@
+MySQL
+SQL - Structured Query Language
+
+
+-------------------
+Baze (Database)
+    Tabele (Tables)
+
+Baza: WebProdavnica
+    Tabele:
+        korisnici
+             id - broj (jedinstven broj) JMBG
+                -> ime
+                -> tip: INT (BIGINT, SMALLINT, TINYINT...), VARCHAR (velicinu), DECIMAL/FLOAT/DOUBLE..., TEXT
+                -> KEY: PK -> Primary Key -> glavni kljuc -> njega stalvjamo na polje (moramo da stavimo) i to polje ce biti glavno i jedinstveno
+                -> NOT NULL / NULL ->
+                    NOT NULL: Polje ne moze biti prazno
+                    NULL: Polje moze biti prazno
+             name
+
+        kupovine
+            id
+            name
+            price
+            ...
+
+Query:
+    -> Upit ka bazi za neke podatke
+
+        CRUD
+            Create
+            Read
+            Update
+            Delete
+
+        -> SELECT: Uzmi podatke
+            -> SELECT name FROM users -> Uzmi imena od korisnika
+
+        -> INSERT INTO: Upisemo podatke u bazu
+            -> INSERT INTO users -> napravi novog korisnika
+
+        -> DELETE: brisemo podatke iz baze
+            -> DELETE FROM users WHERE name = "Toma" Brisemo korisnika iz tabele users koji se zove "Toma"
+
+        -> UPDATE: Updatovali ili azurirali neki podatak
+            -> Menjamo ime nekog korisnika iz tabele users
+
+
+PROGRAMI ZA KONEKCIJU:
+    -> PyCharm
+    -> MySQL Workbench
+    -> Datagrip
+    -> terminala (cmd - komandne linije)
