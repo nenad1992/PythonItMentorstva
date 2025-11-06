@@ -1,3 +1,9 @@
+import random
+from faker import Faker
+from datetime import datetime
+
+faker = Faker()
+
 genres = ["Mystery", "Adventure", "Fantasy"]
 adjectives = ["Dark", "Forbidden", "Mysterious", "Hidden", "Eternal"]
 nouns = ["Secrets", "Kingdom", "Journey", "Love", "Shadow"]
@@ -29,3 +35,17 @@ def get_all_books(con):
     results = cursor.fetchall()
     cursor.close()
     return results
+
+def get_book_by_id(con, book_id):
+    cursor = con.cursor()
+    cursor.execute("SELECT * FROM books WHERE id = %s", book_id)
+    con.commit()
+    results = cursor.fetchone()
+    cursor.close()
+    return results
+
+def delete_book_by_id(con, book_id):
+    cursor = con.cursor()
+    cursor.execute("DELETE FROM books WHERE id = %s", book_id)
+    con.commit()
+    cursor.close()
