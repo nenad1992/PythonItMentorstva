@@ -1,5 +1,6 @@
 import pymysql
 
+
 class Db:
 
     def __init__(self):
@@ -12,5 +13,6 @@ class Db:
 
     def _get_connection(self):
         return self.__connection
+
 
 test = Db()
