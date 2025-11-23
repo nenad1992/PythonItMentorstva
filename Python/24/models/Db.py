@@ -14,5 +14,17 @@ class Db:
     def _get_connection(self):
         return self.__connection
 
+    # Definisanje cursora
+    def _get_cursor(self):
+        return self.__connection.cursor()
 
-test = Db()
+    # Commit transakcije
+    def commit(self):
+        self.__connection.commit()
+
+    # Zatvaranje konekcije sa bazom
+    def close(self):
+        self.__connection.close()
+
+
+#test = Db()
