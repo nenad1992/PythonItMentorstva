@@ -7,6 +7,9 @@ def switch_navigation_window(event, content):
     selection = listbox.curselection()
     name = listbox.get(selection)
 
+    for child in content.winfo_children():
+        child.destroy()
+
     if name.lower() == "uplate":
         show_payment_window(content)
     else:
