@@ -1,6 +1,7 @@
 import tkinter as tk
 from src.windows.users import show_users_window
 from src.windows.payments import show_payment_window
+from src.windows.add_user_window import show_add_user_window
 
 def switch_navigation_window(event, content):
     listbox = event.widget
@@ -12,11 +13,13 @@ def switch_navigation_window(event, content):
 
     if name.lower() == "uplate":
         show_payment_window(content)
-    else:
+    elif name.lower() == "korisnici":
         show_users_window(content)
+    elif name.lower() == "dodavanje korisnika":
+        show_add_user_window(content)
 
 def show_navigation(window):
-    nav_items = ["Uplate", "Korisnici", "Dodavanje uplate"]
+    nav_items = ["Uplate", "Korisnici", "Dodavanje uplate", "Dodavanje korisnika"]
     navigation = tk.Listbox(window)
     navigation.pack(side="left", fill='y', padx=5)
 
